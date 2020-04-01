@@ -1,7 +1,5 @@
 package ro.unitbv.javadatatype.lab2Ex3;
 
-
-
 public class Adresa {
 
 	String street;
@@ -9,8 +7,6 @@ public class Adresa {
 	String city;
 
 	int number;
-
-
 
 	public Adresa(String street, String city, int number) {
 
@@ -22,8 +18,6 @@ public class Adresa {
 
 	}
 
-
-
 	@Override
 
 	public String toString() {
@@ -32,15 +26,11 @@ public class Adresa {
 
 	}
 
-
-
 	public String getstreet() {
 
 		return "Street: " + street;
 
 	}
-
-
 
 	public String getcity() {
 
@@ -48,22 +38,16 @@ public class Adresa {
 
 	}
 
-
-
 	public String getnumber() {
 
 		return "Number:" + number;
 
 	}
 
-
-
 	public String getFullAdress() {
 
 		return "Street:" + street + " , City:" + city + " ,  Number:" + number;
 
 	}
-
-
 
 }

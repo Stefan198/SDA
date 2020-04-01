@@ -1,28 +1,38 @@
 package ro.unitbv.javadatatype.lab2;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Collections;
 
 public class ex3 {
 
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(System.in);
-		List<Integer> myCoords = new ArrayList<Integer>();
-		int drum2=scanner.nextInt();
-		int drum3=scanner.nextInt();
-	
-		//String drum5=scanner.nextLine();
-		//String drum6=scanner.nextLine();
-		//String drum7=scanner.nextLine();
-		//String drum8=scanner.nextLine();
-		//String drum9=scanner.nextLine();
-	    myCoords.add(drum2);
-	    myCoords.add(drum3);
-	    
-	    System.out.println(myCoords);
-	  }
+
+		ArrayList<Integer> temperatura = new ArrayList<Integer>();
+		temperatura.add(20);
+		temperatura.add(30);
+		temperatura.add(35);
+		temperatura.add(37);
+		temperatura.add(38);
+		temperatura.add(36);
+		temperatura.add(40);
+		// temperatura.add(37.1);
+		// temperatura.add(37.5);
+		// temperatura.add(36.9);
+		Collections.sort(temperatura);
+		System.out.println(temperatura);
+
+		System.out.println("temperaturi normale:");
+		for (int i : temperatura) {
+			if (i <= 37) {
+				System.out.println(i);
+			}
+		}
+		System.out.println("temperaturi anormale:");
+		for (int i : temperatura) {
+			if (i > 37) {
+				System.out.println(i);
+			}
+		}
 
 	}
-
-
+}
