@@ -1,8 +1,8 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 public interface Shape {
 
-    void Draw();
+    void draw();
 
     double getArea();
 

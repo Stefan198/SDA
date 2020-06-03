@@ -1,4 +1,4 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 public class Rectangle implements Shape {
     private static final String NUME_CONSTANTA = "Rectangle";
@@ -53,7 +53,7 @@ public double getArea() {// returneaza aria la patrat
 
     }
 
-    public void Draw() {
+    public void draw() {
 
         String a[][] = new String[width][height];
 

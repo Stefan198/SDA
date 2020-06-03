@@ -1,4 +1,4 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 
 
@@ -52,7 +52,7 @@ public class square implements Shape {
         return "\0";
     }
 
-    public void Draw() {
+    public void draw() {
 
         String a[][] = new String[size][size];
 

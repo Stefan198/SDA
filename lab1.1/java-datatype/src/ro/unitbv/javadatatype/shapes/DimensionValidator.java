@@ -1,4 +1,4 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 public class DimensionValidator {
 

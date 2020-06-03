@@ -1,4 +1,4 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,9 @@ public class main {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         List<Shape> shapes = new ArrayList<>();
-        shapes.add(new square("#a09542", 10, 12));
+        shapes.add(new square("#i09542", 10, 12));
         shapes.add(new Rectangle("#f5f6f5", 5, 8, 10));
-        shapes.add(new Circle("#f5f6f5", 2, 5));
+        shapes.add(new Circle("#f5f6f5", 2, 9));
 
         for (Shape s : shapes) {
 
@@ -27,7 +27,7 @@ public class main {
             System.out.println(s.getHexFillColor());
 
             System.out.println();
-            s.Draw();
+            s.draw();
             System.out.println();
 
         }

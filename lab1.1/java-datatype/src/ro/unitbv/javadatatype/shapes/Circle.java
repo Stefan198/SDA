@@ -1,4 +1,4 @@
-package ro.unitbv.shapes;
+package ro.unitbv.javadatatype.shapes;
 
 public class Circle implements Shape {
     private static final String NUME_CONSTANTA = "Circle";
@@ -52,9 +52,9 @@ public class Circle implements Shape {
         return "\0";
     }
 
-    public void Draw() {
-       int posX = 6;
-       int posY = 6;
+    public void draw() {
+       int posX = 10;
+       int posY = 10;
 
        for (int i = 0; i <= posX + radius; i++) {
            for (int j = 1; j <= posY + radius; j++) {
